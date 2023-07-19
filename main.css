@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.currentWeather, #forecast{
+    width: 500px;
+    height: 150px;
+    margin: 30px auto;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #111;
+    border-radius: 8px;
+}
+
+.currentWeather p{
+    font-size: 16px;
+}
+
+#forecast{
+    flex-direction: row;
+    padding: 0px;
+}
+
+#cap, .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#weather{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#temperature, #addInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#temperature h2{
+    font-size: 35px;
+}
+
+.infoForecast{
+    width: 100px;
+    height: 150px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid #111;
+    font-size: 15px;
+}
+
+.infoForecast:last-child {
+    border-right: none;
+}
+
+.infoForecast p, h3 {
+    font-size: 15px;
+}
